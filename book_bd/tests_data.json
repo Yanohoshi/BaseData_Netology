@@ -1,0 +1,43 @@
+[
+  {
+    "model": "publisher",
+    "pk": 1,
+    "fields": {
+      "name": "Пушкин"
+    }
+  },
+  {
+    "model": "book",
+    "pk": 1,
+    "fields": {
+      "title": "Капитанская дочка",
+      "id_publisher": 1
+    }
+  },
+  {
+    "model": "shop",
+    "pk": 1,
+    "fields": {
+      "name": "Буквоед"
+    }
+  },
+  {
+    "model": "stock",
+    "pk": 1,
+    "fields": {
+      "id_book": 1,
+      "id_shop": 1,
+      "count": 10
+    }
+  },
+  {
+    "model": "sale",
+    "pk": 1,
+    "fields": {
+      "price": 600.00,
+      "date_sale": "2022-11-09",
+      "id_stock": 1,
+      "count": 1
+    }
+  }
+]
